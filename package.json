@@ -7,7 +7,7 @@
     "js": "watchify src/js/index.js -v -d -o dist/index.js",
     "css:build": "node-sass src/scss/index.scss | postcss -u autoprefixer > dist/index.css",
     "css": "onchange './src/scss/**/*.scss' -- npm run css:build",
-		"html:build":"assemble",
+    "html:build":"assemble",
     "html": "onchange './src/**/*.hbs' -- assemble"
   },
   "browserify": {
