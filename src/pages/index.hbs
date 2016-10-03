@@ -1,2 +1,26 @@
-hellos {{site}}
-{{> tile}}
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9 no-js"><![endif]-->
+<!--[if IE 8 ]><html class="ie8 no-js"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js"><!--<![endif]-->
+<head>
+  <title>Max Rolon</title>
+  <meta charset="utf-8" />
+  <!--<link rel="icon" type="image/png" href="dist/assets/favicon.png"/>-->
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
+  <!--<link rel="canonical" href="{{ canonical_url }}" />-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+  <link href="dist/index.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <header>Max Rolon</header>
+  {{#each data.rows}}
+    <div class="row">
+    {{#each this}}
+      {{section this.type this}}
+    {{/each}}
+    </div>
+  {{/each}}
+  <script type="text/javascript" async src="dist/index.js"></script>
+</body>
+</html>

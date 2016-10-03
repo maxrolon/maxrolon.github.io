@@ -1,0 +1,43 @@
+{
+	"site":"maxrolon",
+  "rows":[
+    [
+      {
+        "width":"100%",
+        "type":"image",
+        "src":"halong.jpg",
+        "url":"http://google.com"
+      }
+    ],
+    [
+      {
+        "width":"40%",
+        "type":"gist",
+        "title":"Rethinking Block Scoped Variables in ES6",
+        "url":"https://gist.github.com/maxrolon/c7515c9d540068ecb6b5e7aa00b2d72d",
+        "contents":"hello"
+      },
+      {
+        "width":"60%",
+        "type":"image",
+        "src":"halong.jpg",
+        "url":"http://google.com"
+      }
+    ],
+    [
+      {
+        "width":"70%",
+        "type":"image",
+        "src":"halong.jpg",
+        "url":"http://google.com"
+      },
+      {
+        "width":"30%",
+        "type":"project",
+        "title":"Gitman",
+        "contents":"A Laravel + Shopify Plus barrel of fun using Shopify Multipass, JWT based authentication over a custom restful API.",
+        "url":"http://google.com"
+      }
+    ]
+  ]
+}
