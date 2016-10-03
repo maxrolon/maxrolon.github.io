@@ -13,6 +13,8 @@ function request(url){
   })
 }
 
+//Idea inspired by:
+//https://davidwalsh.name/async-generators
 function *main(){
   for (let i in data.rows){
     for (let _i in data.rows[i]){
