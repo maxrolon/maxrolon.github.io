@@ -7,32 +7,8 @@
 .cb {
   color: #000; }
 
-.cg1 {
-  color: #e6e6e6; }
-
-.cg2 {
-  color: #cccccc; }
-
-.cg3 {
-  color: #b3b3b3; }
-
-.cg4 {
-  color: #999999; }
-
-.cg5 {
-  color: gray; }
-
-.cg6 {
-  color: #666666; }
-
-.cg7 {
-  color: #4d4d4d; }
-
-.cg8 {
-  color: #333333; }
-
-.cg9 {
-  color: #1a1a1a; }
+.c-g1 {
+  color: #2A2A2A; }
 
 .bg-c1 {
   background-color: #148ECC; }
@@ -43,32 +19,8 @@
 .bg-cb {
   background-color: #000; }
 
-.bg-cg1 {
-  background-color: #e6e6e6; }
-
-.bg-cg2 {
-  background-color: #cccccc; }
-
-.bg-cg3 {
-  background-color: #b3b3b3; }
-
-.bg-cg4 {
-  background-color: #999999; }
-
-.bg-cg5 {
-  background-color: gray; }
-
-.bg-cg6 {
-  background-color: #666666; }
-
-.bg-cg7 {
-  background-color: #4d4d4d; }
-
-.bg-cg8 {
-  background-color: #333333; }
-
-.bg-cg9 {
-  background-color: #1a1a1a; }
+.bg-c-g1 {
+  background-color: #2A2A2A; }
 
 body {
   margin: 0; }
@@ -216,6 +168,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .container--xs {
   max-width: 735px; }
+
+.gutter {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .fit-x {
   bottom: 0;
@@ -488,6 +444,9 @@ b, strong {
 .decoration--none {
   text-decoration: none; }
 
+.lh-0 {
+  line-height: 0; }
+
 button {
   -webkit-appearance: none;
   border: 0;
@@ -539,7 +498,6 @@ select {
   outline: 0; }
 
 label {
-  color: #666666;
   margin-bottom: .25em; }
 
 select {
@@ -936,4 +894,56 @@ th {
 .ph2 {
   padding-left: 2em;
   padding-right: 2em; }
+
+.mha {
+  margin-left: auto;
+  margin-right: auto; }
+
+.u-clear::before, .u-clear::after {
+  content: ' ';
+  display: table; }
+
+.u-clear::after {
+  clear: both; }
+
+.row {
+  margin-bottom: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.gutter {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.half-gutter {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.image--img {
+  width: 100%;
+  height: auto; }
+
+.gist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.gist > div {
+  width: 100%;
+  height: 100%; }
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.project > div {
+  width: 100%;
+  height: 100%; }
+
+header {
+  padding: 50px 0; }
 

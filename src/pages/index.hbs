@@ -13,14 +13,16 @@
   <link href="dist/index.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-  <header>Max Rolon</header>
+  <div class="container--l mha gutter">
+  <header>Max Rolon: Yo.</header>
   {{#each data.rows}}
-    <div class="row">
+    <div class="row u-clear lh-0">
     {{#each this}}
       {{section this.type this}}
     {{/each}}
     </div>
   {{/each}}
+  </div>
   <script type="text/javascript" async src="dist/index.js"></script>
 </body>
 </html>

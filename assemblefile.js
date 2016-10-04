@@ -17,9 +17,29 @@ app.helper('section', (string, ctx) => {
   return app.engines['.hbs'].Handlebars.compile( sections[string] )(ctx)
 })
 
+app.helper('if_eq', (val1, val2, opts) => {
+  if (val1 == val2){
+    return opts.fn(this)
+  } else {
+    return opts.inverse(this)
+  }
+})
+
+app.helper('if_not', (val1, val2, opts) => {
+  if (val1 != val2){
+    return opts.fn(this)
+  } else {
+    return opts.inverse(this)
+  }
+})
+
 let images = {}
-app.helper('image', (src, ctx) => {
-  return `<img alt="Embedded Image" src="data:image/jpeg;base64,${ctx['dataURL']}" data-src="${src}" />`
+app.helper('image', (src, type, ctx) => {
+  if (type == 'img'){
+    return `<img src="data:image/jpeg;base64,${ctx['dataURL']}" data-src="${src}" class="image--img">`
+  } else {
+    return `<div style="background-image:url(data:image/jpeg;base64,${ctx['dataURL']})" data-src="${src}" ></div>`
+  }
 })
 
 app.page('index.hbs',{content: fs.readFileSync('./src/pages/index.hbs','utf8') })
