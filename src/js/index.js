@@ -25,19 +25,24 @@ const cacheOffsets = el => el.offsetY = getOffset(el)
 
 const start = (e = {}) => {
   const images = [].slice.call( document.querySelectorAll('[data-src]') )
+    .reduce( (obj, el, i) => (obj[i] = el, obj), {})
+  console.dir(images)
   let wHeight;
   let getAllOffsets;
   (getAllOffsets = function(){
-    images.forEach(cacheOffsets)
+    for ( let i in images){
+      cacheOffsets( images[i] )
+    }
     wHeight = getWHeight()
   })();
   let check;
   scroll(check = function(y){
-    images.forEach( el => {
-      if ( el.offsetY < ( y + wHeight) ){
-        loadIn(el)
+    for ( let i in images){
+      if ( images[i].offsetY < ( y + wHeight) ){
+        loadIn( images[i] )
+        delete images[i]
       }
-    })
+    }
   })
 
   window.addEventListener('resize', getAllOffsets)
