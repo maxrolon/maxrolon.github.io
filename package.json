@@ -6,7 +6,8 @@
     "start": "parallelshell 'npm run js' 'npm run css' 'npm run html'",
     "js": "watchify src/js/index.js -v -d -o dist/index.js",
     "css:build": "node-sass src/scss/index.scss | postcss -u autoprefixer > dist/index.css",
-    "css": "onchange './src/scss/**/*.scss' -- npm run css:build","html:build": "assemble",
+    "css": "onchange './src/scss/**/*.scss' -- npm run css:build",
+    "html:build": "assemble",
     "html": "onchange './src/**/*.hbs' -- assemble",
     "images": "node images.js"
   },
@@ -36,5 +37,8 @@
     "request": "^2.75.0",
     "watchify": "^3.7.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "raf-scroll.js": "0.0.10"
+  }
 }
