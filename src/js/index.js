@@ -5,7 +5,7 @@ const imgIX = 'https://maxrolon.imgix.net/'
 const loadIn = (el) => {
   const src = el.getAttribute('data-src')
   if (!src) return;
-  const width = Math.ceil( el.getBoundingClientRect().width * ( (window.devicePixelRatio || 1) * 0.75 ) )
+  const width = Math.ceil( el.getBoundingClientRect().width * (window.devicePixelRatio || 1) )
   const extUrl = `${imgIX}${src}?w=${width}&q=60`;
   const loader = new Image()
   loader.onload = () => {
