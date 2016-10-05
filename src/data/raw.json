@@ -11,14 +11,14 @@
     ],
     [
       {
-        "width":"13",
+        "width":"12",
         "type":"gist",
         "title":"Rethinking Block Scoped Variables in ES6",
         "url":"https://gist.github.com/maxrolon/c7515c9d540068ecb6b5e7aa00b2d72d",
         "contents":"hello"
       },
       {
-        "width":"23",
+        "width":"12",
         "type":"image",
         "src":"temple.jpg",
         "url":"http://google.com"
@@ -26,13 +26,13 @@
     ],
     [
       {
-        "width":"34",
+        "width":"23",
         "type":"image",
         "src":"harihara.jpg",
         "url":"http://google.com"
       },
       {
-        "width":"14",
+        "width":"13",
         "type":"project",
         "title":"Gitman",
         "contents":"A Laravel + Shopify Plus barrel of fun using Shopify Multipass, JWT based authentication over a custom restful API.",

@@ -2,7 +2,14 @@
   margin-bottom:20px;
   margin-left:-10px;
   margin-right:-10px;
-  display:flex;
+  @media( min-width: break(m) ){
+    display:flex;
+  }
+}
+.flex-cell{
+  @media( min-width: break(m)){
+    display:flex;
+  }
 }
 .gutter{
   padding-left:20px;

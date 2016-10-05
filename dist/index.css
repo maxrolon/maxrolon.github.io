@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .c1 {
   color: #148ECC; }
 
@@ -909,10 +910,18 @@ th {
 .row {
   margin-bottom: 20px;
   margin-left: -10px;
-  margin-right: -10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  margin-right: -10px; }
+  @media (min-width: 50em) {
+    .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+@media (min-width: 50em) {
+  .flex-cell {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .gutter {
   padding-left: 20px;
@@ -922,23 +931,59 @@ th {
   padding-left: 10px;
   padding-right: 10px; }
 
+@font-face {
+  font-family: 'maxrolon';
+  src: url("fonts/maxrolon.eot?73359153");
+  src: url("fonts/maxrolon.eot?73359153#iefix") format("embedded-opentype"), url("fonts/maxrolon.woff2?73359153") format("woff2"), url("fonts/maxrolon.woff?73359153") format("woff"), url("fonts/maxrolon.ttf?73359153") format("truetype"), url("fonts/maxrolon.svg?73359153#maxrolon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "maxrolon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-github-circled:before {
+  content: '\f09b'; }
+
+/* '' */
+.icon-instagram:before {
+  content: '\f16d'; }
+
+/* '' */
+.icon-medium:before {
+  content: '\f23a'; }
+
+/* '' */
 .image--img {
   width: 100%;
   height: auto; }
 
-.gist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .gist > div {
   width: 100%;
   height: 100%; }
-
-.project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
 
 .project > div {
   width: 100%;
@@ -946,4 +991,11 @@ th {
 
 header {
   padding: 50px 0; }
+
+.header__logo {
+  margin: 0; }
+
+.icon-bar__icon {
+  font-size: 1.8em;
+  text-decoration: none; }
 

@@ -5,7 +5,9 @@ const imgIX = 'https://maxrolon.imgix.net/'
 const loadIn = (el) => {
   const src = el.getAttribute('data-src')
   if (!src) return;
-  const width = Math.ceil( el.getBoundingClientRect().width * (window.devicePixelRatio || 1) )
+  let width = Math.ceil( el.getBoundingClientRect().width * (window.devicePixelRatio || 1) )
+  //round to next 100px interval
+  width = Math.ceil(width/100)*100
   const extUrl = `${imgIX}${src}?w=${width}&q=60`;
   const loader = new Image()
   loader.onload = () => {
@@ -26,7 +28,6 @@ const cacheOffsets = el => el.offsetY = getOffset(el)
 const start = (e = {}) => {
   const images = [].slice.call( document.querySelectorAll('[data-src]') )
     .reduce( (obj, el, i) => (obj[i] = el, obj), {})
-  console.dir(images)
   let wHeight;
   let getAllOffsets;
   (getAllOffsets = function(){
