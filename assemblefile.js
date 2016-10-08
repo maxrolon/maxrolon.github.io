@@ -1,10 +1,10 @@
 "use strict"
-let extname = require('gulp-extname')
-let fs = require('fs')
-let request = require('http')
-let glob = require('glob-fs')()
-let assemble = require('assemble')
-let app = assemble()
+const extname = require('gulp-extname')
+const fs = require('fs')
+const request = require('http')
+const glob = require('glob-fs')()
+const assemble = require('assemble')
+const app = assemble()
 
 app.data('./src/data/data.json')
 
@@ -15,6 +15,10 @@ glob.readdirSync('./src/partials/*.hbs').map( path => {
 
 app.helper('section', (string, ctx) => {
   return app.engines['.hbs'].Handlebars.compile( sections[string] )(ctx)
+})
+
+app.helper('code', fileName => {
+  return '<pre>' + fs.readFileSync(`./src/data/snippets/${fileName}.js`, 'utf8').replace(/(?:\r\n|\r|\n)/g, '<br />') + '</pre>'
 })
 
 app.helper('if_eq', (val1, val2, opts) => {

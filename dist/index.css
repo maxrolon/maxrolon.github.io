@@ -23,6 +23,9 @@
 .bg-c-g1 {
   background-color: #2A2A2A; }
 
+html {
+  -webkit-font-smoothing: antialiased; }
+
 body {
   margin: 0; }
 
@@ -348,7 +351,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   z-index: 1000; }
 
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 100%;
   font-weight: 100;
   color: #000; }
@@ -977,13 +980,30 @@ th {
   content: '\f23a'; }
 
 /* '' */
+pre {
+  line-height: 1.5em; }
+
 .image--img {
   width: 100%;
   height: auto; }
 
-.gist > div {
+.gist__title {
+  margin-bottom: 1.5em; }
+
+.gist__inner {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative;
+  padding: 2em; }
+
+.gist__foot {
+  position: absolute;
+  right: 2em;
+  bottom: 2em; }
+
+.gist__icon {
+  font-size: 1.8em;
+  vertical-align: middle; }
 
 .project > div {
   width: 100%;
