@@ -1066,7 +1066,6 @@ pre {
 
 .gist__inner {
   width: 100%;
-  height: 100%;
   position: relative;
   padding: 2em; }
 
@@ -1081,12 +1080,14 @@ pre {
 
 .project__table {
   width: 100%;
-  height: 100%;
-  display: table; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .project__inner {
-  display: table-cell;
-  vertical-align: middle;
   padding: 2em; }
 
 .project__title {
