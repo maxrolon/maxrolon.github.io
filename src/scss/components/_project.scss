@@ -1,6 +1,15 @@
 .project{
 }
-.project > div{
+.project__table{
   width:100%;
   height:100%;
+  display:table;
+}
+.project__inner{
+  display:table-cell;
+  vertical-align:middle;
+  padding:2em;
+}
+.project__title{
+  margin:0 0 0.3em;
 }

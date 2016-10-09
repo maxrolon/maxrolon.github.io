@@ -6,6 +6,13 @@
     display:flex;
   }
 }
+.row > * + *{
+  margin-top:20px;
+
+  @media( min-width: break(m) ){
+    margin-top:0;
+  }
+}
 .flex-cell{
   @media( min-width: break(m)){
     display:flex;

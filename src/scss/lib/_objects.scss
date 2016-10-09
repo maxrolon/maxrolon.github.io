@@ -1,0 +1,19 @@
+.o-diagonal{
+  height:100px;
+  display:block;
+  position:relative;
+}
+.o-diagonal:before{
+  content:'';
+  width:1px;
+  height:100%;
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:white;
+  margin:auto;
+  transform: rotate(45deg);
+}

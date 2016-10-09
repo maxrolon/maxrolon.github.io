@@ -397,7 +397,7 @@ h6,
 p,
 .p {
   font-size: 1.1rem;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.7; }
 
 p {
@@ -903,6 +903,9 @@ th {
   margin-left: auto;
   margin-right: auto; }
 
+.m0 {
+  margin: 0; }
+
 .u-clear::before, .u-clear::after {
   content: ' ';
   display: table; }
@@ -919,6 +922,12 @@ th {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
+
+.row > * + * {
+  margin-top: 20px; }
+  @media (min-width: 50em) {
+    .row > * + * {
+      margin-top: 0; } }
 
 @media (min-width: 50em) {
   .flex-cell {
@@ -983,6 +992,26 @@ th {
 pre {
   line-height: 1.5em; }
 
+.o-diagonal {
+  height: 100px;
+  display: block;
+  position: relative; }
+
+.o-diagonal:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
 .image--img {
   width: 100%;
   height: auto; }
@@ -1005,9 +1034,18 @@ pre {
   font-size: 1.8em;
   vertical-align: middle; }
 
-.project > div {
+.project__table {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  display: table; }
+
+.project__inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2em; }
+
+.project__title {
+  margin: 0 0 0.3em; }
 
 header {
   padding: 50px 0; }
@@ -1018,4 +1056,7 @@ header {
 .icon-bar__icon {
   font-size: 1.8em;
   text-decoration: none; }
+
+footer {
+  margin: 4em 0; }
 
