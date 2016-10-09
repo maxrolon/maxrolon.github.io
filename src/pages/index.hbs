@@ -17,9 +17,9 @@
   <header class="u-clear">
     <p class="float-l header__logo">Max Rolon: Yo.</p>
     <div class="float-r icon-bar">
-      <a href="#" class="icon-instagram icon-bar__icon"></a>
-      <a href="#" class="icon-medium icon-bar__icon"></a>
-      <a href="#" class="icon-github-circled icon-bar__icon"></a>
+      <a href="https://instagram.com/{{data.instagram}}" class="icon-instagram icon-bar__icon"></a>
+      <a href="https://medium.cpm/{{data.medium}}" class="icon-medium icon-bar__icon"></a>
+      <a href="https://github.com/{{data.github}}" class="icon-github-circled icon-bar__icon"></a>
     </div>
   </header>
   {{#each data.rows}}
@@ -31,7 +31,7 @@
   {{/each}}
   </div>
   <footer class="align-c">
-    <p>That's all folks. <a href="mailto:hello@maxrolon.com">Email Me.</p>
+    <p>That's all folks. <a href="mailto:{{data.email}}">{{data.email}}</a> for anything.</p>
   </footer>
   <script type="text/javascript" async src="dist/index.js"></script>
 </body>

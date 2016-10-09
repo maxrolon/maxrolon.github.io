@@ -1,3 +1,6 @@
-<div class="image w1 w{{width}}_m float-l half-gutter lh-0">
+<div class="image w1 w{{width}}_m float-l half-gutter lh-0 relative">
+  {{# if alt}}
+    <div class="image__hover bg-c-g1"><p class="cw">{{alt}}</p></div>
+  {{/if}}
   {{image src 'img' this}}
 </div>

@@ -1,5 +1,9 @@
 {
 	"site":"maxrolon",
+  "instagram":"rollin_grams",
+  "email":"hello@maxrolon.com",
+  "github":"maxrolon",
+  "medium":"#",
   "rows":[
     [
       {
@@ -21,7 +25,8 @@
         "width":"12",
         "type":"image",
         "src":"temple.jpg",
-        "url":"http://google.com"
+        "url":"http://google.com",
+        "alt":"Hindu Temple offerings, Thailand"
       }
     ],
     [
@@ -29,7 +34,8 @@
         "width":"23",
         "type":"image",
         "src":"harihara.jpg",
-        "url":"http://google.com"
+        "url":"http://google.com",
+        "alt":"HariHaraLaya reatreat, Cambodia"
       },
       {
         "width":"13",

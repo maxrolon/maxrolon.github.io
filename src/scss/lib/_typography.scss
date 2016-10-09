@@ -1,8 +1,12 @@
 :root {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 100%;
+  font-size: 80%;
   font-weight: 100;
   color: #000;
+
+  @media( min-width: break(l) ){
+    font-size: 100%;
+  }
 }
 h1, h2, h3, h4, h5, h6, p,
 .h1, .h2, .h3, .h4, .h5, .h6, .p {
@@ -70,6 +74,12 @@ small {
 }
 b, strong {
   font-weight: bold;
+}
+a{
+  transition: color 300ms;
+}
+a:hover{
+  color:$c-blue;
 }
 .type--reset {
   margin: 0;
