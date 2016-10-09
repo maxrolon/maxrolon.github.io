@@ -3,6 +3,19 @@ header{
 }
 .header__logo{
   margin:0;
+
+  @media(max-width:break(m,true)){
+    text-transform: uppercase;
+    letter-spacing: 0.17em;
+    font-size: 1.4em;
+  }
+}
+.header__byline{
+  display:none;
+
+  @media(min-width:break(m)){
+    display:inline;
+  }
 }
 .icon-bar__icon{
   font-size:1.8em;

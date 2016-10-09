@@ -5,7 +5,7 @@
 }
 .image__hover{
   position: absolute;
-  width: 40%;
+  width: 70%;
   top: 0;
   left: 0;
   right: 0;
@@ -21,6 +21,10 @@
   opacity:0;
   transform: translateY(10px);
   transition: all 300ms;
+
+  @media (min-width: break(m)){
+    width: 40%;
+  }
 }
 .image:hover .image__hover{
   opacity:1;
