@@ -1,0 +1,9 @@
+.quote__title{
+  max-width:620px;
+  text-align:center;
+  margin: .7 auto;
+
+  @media(min-width:break(m)){
+    margin: 1.5em auto 1.2em;
+  }
+}

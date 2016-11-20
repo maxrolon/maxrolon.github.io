@@ -13,6 +13,11 @@
     margin-top:0;
   }
 }
+.row:nth-child(5){
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+}
 .flex-cell{
   @media( min-width: break(m)){
     display:flex;

@@ -9,70 +9,37 @@
       {
         "width":"1",
         "type":"image",
-        "src":"halong.jpg",
+        "src":"halong-v2.jpg",
         "url":"http://google.com"
       }
     ],
     [
       {
-        "width":"12",
-        "type":"gist",
-        "title":"Rethinking Block Scoped Variables in ES6",
-        "url":"https://gist.github.com/maxrolon/c7515c9d540068ecb6b5e7aa00b2d72d",
-        "contents":"loop-closure"
-      },
-      {
-        "width":"12",
-        "type":"image",
-        "src":"temple.jpg",
-        "url":"http://google.com",
-        "alt":"Hindu Temple offerings, Thailand"
+        "width":"1",
+        "type":"quote",
+        "quote":"I am a Senior Developer at <a href='https://barrelny.com'>Barrel</a>, a healthy lifestyle focused creative agency in NYC."
       }
     ],
     [
       {
-        "width":"23",
-        "type":"image",
-        "src":"harihara.jpg",
-        "url":"http://google.com",
-        "alt":"HariHaraLaya reatreat, Cambodia"
-      },
-      {
-        "width":"13",
-        "type":"project",
-        "title":"Gitman",
-        "contents":"A Laravel + Shopify Plus barrel of fun using Shopify Multipass, JWT based authentication over a custom restful API.",
-        "url":"http://google.com"
-      }
-    ],
-    [
-      {
-        "width":"12",
-        "type":"gist",
-        "title":"Rethinking Block Scoped Variables in ES6",
-        "url":"https://gist.github.com/maxrolon/c7515c9d540068ecb6b5e7aa00b2d72d",
-        "contents":"loop-closure"
-      },
-      {
-        "width":"12",
-        "type":"image",
-        "src":"temple.jpg",
-        "url":"http://google.com"
-      }
-    ],
-    [
-      {
-        "width":"23",
-        "type":"image",
-        "src":"harihara.jpg",
-        "url":"http://google.com"
-      },
-      {
-        "width":"13",
-        "type":"project",
-        "title":"Gitman",
-        "contents":"A Laravel + Shopify Plus barrel of fun using Shopify Multipass, JWT based authentication over a custom restful API.",
-        "url":"http://google.com"
+        "width":"1",
+        "type":"list",
+        "title":"Recent Contributions",
+        "list":[
+          {
+            "name":"Gitman",
+            "url":"https://www.gitman.com/"
+          },{
+            "name":"Wanderlust",
+            "url":"http://wanderlust.com/festivals"
+          },{
+            "name":"Jacobs Pillow",
+            "url":"https://www.jacobspillow.org/"
+          },{
+            "name":"Paintbox",
+            "url":"http://paint-box.com/"
+          }
+        ]
       }
     ]
   ]

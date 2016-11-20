@@ -1,3 +1,6 @@
+.image{
+  max-height:800px;
+}
 .image--img{
   width:100%;
   height:100%;
@@ -36,4 +39,12 @@
 }
 .image__hover::before{
   content:'';
+}
+.image + .image{
+  position:relative;
+  top:0;
+
+  @media (min-width: break(m)){
+    top:30px;
+  }
 }

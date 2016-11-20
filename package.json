@@ -3,12 +3,13 @@
   "description": "Performant scroll events with request animation frame",
   "author": "maxrolon",
   "scripts": {
-    "start": "parallelshell 'npm run js' 'npm run css' 'npm run html'",
+    "start": "parallelshell 'npm run js' 'npm run css' 'npm run html' 'npm run livereload'",
     "js": "watchify src/js/index.js -v -d -o dist/index.js",
     "css:build": "node-sass src/scss/index.scss | postcss -u autoprefixer > dist/index.css",
     "css": "onchange './src/scss/**/*.scss' -- npm run css:build",
     "html:build": "assemble",
     "html": "onchange './src/**/*.hbs' -- assemble",
+    "livereload":"livereloadify dist",
     "images": "node images.js"
   },
   "browserify": {

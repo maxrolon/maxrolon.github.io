@@ -358,7 +358,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   font-size: 80%;
   font-weight: 100;
   color: #000; }
-  @media (min-width: 68.75em) {
+  @media (min-width: 50em) {
     :root {
       font-size: 100%; } }
 
@@ -372,8 +372,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,
 .h1 {
-  font-size: 2.8rem;
-  line-height: 1.1; }
+  font-size: 1.6rem;
+  line-height: 1.3; }
+  @media (min-width: 50em) {
+    h1,
+    .h1 {
+      font-size: 2.8rem; } }
 
 h2,
 .h2 {
@@ -942,6 +946,11 @@ th {
     .row > * + * {
       margin-top: 0; } }
 
+.row:nth-child(5) {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
 @media (min-width: 50em) {
   .flex-cell {
     display: -webkit-box;
@@ -1025,6 +1034,9 @@ pre {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg); }
 
+.image {
+  max-height: 800px; }
+
 .image--img {
   width: 100%;
   height: 100%;
@@ -1067,6 +1079,13 @@ pre {
 .image__hover::before {
   content: ''; }
 
+.image + .image {
+  position: relative;
+  top: 0; }
+  @media (min-width: 50em) {
+    .image + .image {
+      top: 30px; } }
+
 .gist__title {
   margin-bottom: 1.5em; }
 
@@ -1100,7 +1119,10 @@ pre {
   margin: 0 0 0.3em; }
 
 header {
-  padding: 50px 0; }
+  padding: 20px 0; }
+  @media (min-width: 50em) {
+    header {
+      padding: 50px 0; } }
 
 .header__logo {
   margin: 0; }
@@ -1121,5 +1143,43 @@ header {
   text-decoration: none; }
 
 footer {
-  margin: 4em 0; }
+  margin: 0; }
+  @media (min-width: 50em) {
+    footer {
+      margin: 5em 0 4em; } }
+
+.quote__title {
+  max-width: 620px;
+  text-align: center;
+  margin: .7 auto; }
+  @media (min-width: 50em) {
+    .quote__title {
+      margin: 1.5em auto 1.2em; } }
+
+.list {
+  color: #000;
+  text-align: center;
+  margin-bottom: 2em; }
+
+.list__title {
+  margin: 0 auto 0.2em; }
+  @media (min-width: 50em) {
+    .list__title {
+      font-size: 2.2rem; } }
+
+.list__ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.list__li {
+  padding: 0 5px;
+  font-size: 1.1rem; }
+  @media (min-width: 50em) {
+    .list__li {
+      display: inline-block; }
+      .list__li:after {
+        content: " / "; } }
+  .list__li:last-child:after {
+    content: ''; }
 

@@ -1,0 +1,33 @@
+.list{
+  color:$cb;
+  text-align:center;
+  margin-bottom:2em;
+}
+.list__title{
+  margin: 0 auto 0.2em;
+  @media( min-width: break(m) ){
+    font-size: 2.2rem;
+  }
+}
+.list__ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.list__li{
+  padding:0 5px;
+  font-size:1.1rem;
+  @media( min-width: break(m) ){
+    display:inline-block;
+
+    &:after{
+      content:" / ";
+    }
+  }
+
+  &:last-child:after{
+    content:''
+  }
+}
+
+
