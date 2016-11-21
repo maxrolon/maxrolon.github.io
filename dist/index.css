@@ -1149,7 +1149,7 @@ footer {
       margin: 5em 0 4em; } }
 
 .quote__title {
-  max-width: 620px;
+  max-width: 610px;
   text-align: center;
   margin: .7 auto; }
   @media (min-width: 50em) {
