@@ -1123,11 +1123,12 @@ footer {
       margin: 5em 0 4em; } }
 
 .quote__title {
-  max-width: 620px;
+  max-width: 400px;
   text-align: center;
-  margin: .7 auto; }
+  margin: .7em auto; }
   @media (min-width: 50em) {
     .quote__title {
+      max-width: 620px;
       margin: 1.5em auto 1.2em; } }
 
 .list {
@@ -1147,13 +1148,14 @@ footer {
   margin: 0; }
 
 .list__li {
-  padding: 0 5px;
   font-size: 1.1rem; }
   @media (min-width: 50em) {
     .list__li {
       display: inline-block; }
       .list__li:after {
-        content: " / "; } }
+        content: " / ";
+        margin-left: 5px;
+        margin-right: 5px; } }
   .list__li:last-child:after {
     content: ''; }
 

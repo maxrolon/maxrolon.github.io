@@ -4,6 +4,7 @@
   "author": "maxrolon",
   "scripts": {
     "start": "parallelshell 'npm run js' 'npm run css' 'npm run html' 'npm run livereload'",
+    "build": "npm run data:build; npm run html:build; npm run css:build; npm run js;",
     "js": "watchify src/js/index.js -v -d -o dist/index.js",
     "css:build": "node-sass src/scss/index.scss | postcss -u autoprefixer > dist/index.css",
     "css": "onchange './src/scss/**/*.scss' -- npm run css:build",

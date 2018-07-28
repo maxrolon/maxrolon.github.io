@@ -15,13 +15,14 @@
   margin:0;
 }
 .list__li{
-  padding:0 5px;
   font-size:1.1rem;
   @media( min-width: break(m) ){
     display:inline-block;
 
     &:after{
       content:" / ";
+      margin-left: 5px;
+      margin-right: 5px;
     }
   }
 
