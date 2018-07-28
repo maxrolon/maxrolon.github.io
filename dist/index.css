@@ -199,25 +199,21 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   right: 0; }
 
 .flex {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 @media (min-width: 31.25em) {
   .flex_s {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 
 @media (min-width: 50em) {
   .flex_m {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 
 @media (min-width: 68.75em) {
   .flex_l {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 
@@ -226,63 +222,48 @@ button::-moz-focus-inner, input::-moz-focus-inner {
       flex-wrap: wrap; }
 
 .flex-items-start {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
-          align-items: flex-start; }
+  -ms-flex-align: start;
+      align-items: flex-start; }
 
 .flex-items-end {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-              -ms-grid-row-align: flex-end;
-          align-items: flex-end; }
+  -ms-flex-align: end;
+      align-items: flex-end; }
 
 .flex-items-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center; }
+  -ms-flex-align: center;
+      align-items: center; }
 
 .flex-items-baseline {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-              -ms-grid-row-align: baseline;
-          align-items: baseline; }
+  -ms-flex-align: baseline;
+      align-items: baseline; }
 
 .flex-items-stretch {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-              -ms-grid-row-align: stretch;
-          align-items: stretch; }
+  -ms-flex-align: stretch;
+      align-items: stretch; }
 
 .flex-justify-start {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
 
 .flex-justify-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
 
 .flex-justify-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .flex-justify-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .flex-justify-around {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
 .flex-auto {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
   min-width: 0;
   min-height: 0; }
 
@@ -434,7 +415,6 @@ b, strong {
   font-weight: bold; }
 
 a {
-  -webkit-transition: color 300ms;
   transition: color 300ms; }
 
 a:hover {
@@ -936,7 +916,6 @@ th {
   margin-right: -10px; }
   @media (min-width: 50em) {
     .row {
-      display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
 
@@ -953,7 +932,6 @@ th {
 
 @media (min-width: 50em) {
   .flex-cell {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 
@@ -1031,17 +1009,18 @@ pre {
   left: 0;
   background-color: white;
   margin: auto;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg); }
+  transform: rotate(45deg); }
 
 .image {
-  max-height: 800px; }
+  max-height: 650px; }
 
 .image--img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  -o-object-position: center 70%;
+     object-position: center 70%; }
 
 .image__hover {
   position: absolute;
@@ -1059,9 +1038,7 @@ pre {
   display: table;
   box-shadow: 2px 2px 0px white;
   opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  -webkit-transition: all 300ms;
+  transform: translateY(10px);
   transition: all 300ms; }
   @media (min-width: 50em) {
     .image__hover {
@@ -1069,8 +1046,7 @@ pre {
 
 .image:hover .image__hover {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0); }
+  transform: translateY(0); }
 
 .image__hover > p {
   display: table-cell;
@@ -1105,12 +1081,10 @@ pre {
 
 .project__table {
   width: 100%;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -ms-flex-align: center;
+      align-items: center; }
 
 .project__inner {
   padding: 2em; }
@@ -1149,7 +1123,7 @@ footer {
       margin: 5em 0 4em; } }
 
 .quote__title {
-  max-width: 610px;
+  max-width: 620px;
   text-align: center;
   margin: .7 auto; }
   @media (min-width: 50em) {

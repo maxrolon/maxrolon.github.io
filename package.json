@@ -1,16 +1,16 @@
 {
   "name": "maxrolon",
-  "description": "Performant scroll events with request animation frame",
+  "description": "A personal site for Max Rolon",
   "author": "maxrolon",
   "scripts": {
     "start": "parallelshell 'npm run js' 'npm run css' 'npm run html' 'npm run livereload'",
     "js": "watchify src/js/index.js -v -d -o dist/index.js",
     "css:build": "node-sass src/scss/index.scss | postcss -u autoprefixer > dist/index.css",
     "css": "onchange './src/scss/**/*.scss' -- npm run css:build",
-    "html:build": "assemble",
+    "html:build": "npm run data:build; assemble",
     "html": "onchange './src/**/*.hbs' -- assemble",
-    "livereload":"livereloadify dist",
-    "images": "node images.js"
+    "livereload": "livereloadify dist",
+    "data:build": "node process-data.js"
   },
   "browserify": {
     "debug": true,
@@ -31,9 +31,10 @@
     "browserify": "^12.0.1",
     "glob-fs": "^0.1.6",
     "gulp-extname": "^0.2.2",
+    "livereloadify": "^2.0.0",
     "node-sass": "^3.7.0",
     "onchange": "^3.0.2",
-    "parallelshell": "^2.0.0",
+    "parallelshell": "3.0.1",
     "postcss-cli": "^2.6.0",
     "request": "^2.75.0",
     "watchify": "^3.7.0"

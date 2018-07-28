@@ -1,7 +1,7 @@
 "use strict"
 const extname = require('gulp-extname')
 const fs = require('fs')
-const request = require('http')
+const path = require('path')
 const glob = require('glob-fs')()
 const assemble = require('assemble')
 const app = assemble()
@@ -9,8 +9,9 @@ const app = assemble()
 app.data('./src/data/data.json')
 
 let sections = {}
-glob.readdirSync('./src/partials/*.hbs').map( path => {
-  sections[/.*\/(.[^.]*)\.hbs/.exec(path)[1]] = fs.readFileSync("./"+path, 'utf8')
+glob.readdirSync('./src/partials/*.hbs').map( file => {
+  const abs = path.normalize(`${__dirname}/../${file}`)
+  sections[/.*\/(.[^.]*)\.hbs/.exec(abs)[1]] = fs.readFileSync(abs, 'utf8')
 })
 
 app.helper('section', (string, ctx) => {
@@ -37,7 +38,6 @@ app.helper('if_not', (val1, val2, opts) => {
   }
 })
 
-let images = {}
 app.helper('image', (src, type, ctx) => {
   if (type == 'img'){
     return `<img src="data:image/jpeg;base64,${ctx['dataURL']}" data-src="${src}" class="image--img">`

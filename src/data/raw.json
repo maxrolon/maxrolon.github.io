@@ -2,6 +2,7 @@
 	"site":"maxrolon",
   "instagram":"rollin_grams",
   "email":"hello@maxrolon.com",
+  "photos":"maxelliotrolon.com",
   "github":"maxrolon",
   "medium":"#",
   "rows":[
@@ -9,35 +10,44 @@
       {
         "width":"1",
         "type":"image",
-        "src":"halong-v2.jpg",
-        "url":"http://google.com"
+        "src":"culture-2018.jpg"
       }
     ],
     [
       {
         "width":"1",
         "type":"quote",
-        "quote":"I am a Senior Developer at <a href='https://barrelny.com'>Barrel</a>, a healthy lifestyle focused creative agency in NYC."
+        "quote":"I am a Senior Developer at <a href='https://barrelny.com'>Barrel</a>, a full service creative agency in New York City."
       }
     ],
     [
       {
         "width":"1",
         "type":"list",
-        "title":"Recent Contributions",
+        "title":"Select Projects",
         "list":[
           {
+            "name":"Moscot",
+            "url":"https://moscot.com"
+          },{
+            "name":"Choosy",
+            "url":"https://www.getchoosy.com"
+          },{
+            "name":"M. Monroe",
+            "url":"https://mmonroe.com"
+          },{
+            "name":"Quanta Magazine",
+            "url":"https://www.quantamagazine.org/"
+          },{
             "name":"Gitman",
-            "url":"https://www.gitman.com/"
+            "url":"https://www.gitman.com"
           },{
-            "name":"Wanderlust",
-            "url":"http://wanderlust.com/festivals"
-          },{
-            "name":"Jacobs Pillow",
-            "url":"https://www.jacobspillow.org/"
-          },{
-            "name":"Paintbox",
-            "url":"http://paint-box.com/"
+            "name":"Austin Eastciders",
+            "url":"https://austineastciders.com"
+          },
+          {
+            "name":"Bare Snacks",
+            "url":"https://baresnacks.com/"
           }
         ]
       }

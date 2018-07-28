@@ -6,7 +6,7 @@ const data = JSON.parse( fs.readFileSync('./src/data/raw.json', 'utf8') )
 
 function request(url){
   req({
-    url:`http://maxrolon.imgix.net/${url}?w=250&q=60`,
+    url:`https://maxrolon.tiny.pictures/main/${url}?w=250&q=60`,
     encoding:'binary'
   }, (err, res, body) => {
     it.next(body)

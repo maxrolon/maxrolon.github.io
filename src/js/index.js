@@ -1,6 +1,6 @@
 import scroll from 'raf-scroll.js'
 
-const imgIX = 'https://maxrolon.imgix.net/'
+const imgIX = 'https://maxrolon.tiny.pictures/main/'
 
 const loadIn = (el) => {
   const src = el.getAttribute('data-src')
