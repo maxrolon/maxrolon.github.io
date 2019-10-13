@@ -10,46 +10,14 @@
       {
         "width":"1",
         "type":"image",
-        "src":"culture-2018.jpg"
+        "src":"IMG_1662.jpg"
       }
     ],
     [
       {
         "width":"1",
         "type":"quote",
-        "quote":"I am a Senior Developer at <a href='https://barrelny.com'>Barrel</a>, a full service creative agency in New York City."
-      }
-    ],
-    [
-      {
-        "width":"1",
-        "type":"list",
-        "title":"Select Projects",
-        "list":[
-          {
-            "name":"Moscot",
-            "url":"https://moscot.com"
-          },{
-            "name":"Dr. Jart+",
-            "url":"https://us.drjart.com/"
-          },{
-            "name":"Tiege Hanley",
-            "url":"https://www.tiege.com/"
-          },{
-            "name":"Quanta Magazine",
-            "url":"https://www.quantamagazine.org/"
-          },{
-            "name":"Gitman",
-            "url":"https://www.gitman.com"
-          },{
-            "name":"Austin Eastciders",
-            "url":"https://austineastciders.com"
-          },
-          {
-            "name":"Bare Snacks",
-            "url":"https://baresnacks.com/"
-          }
-        ]
+        "quote":"I am the Director of Engineering at <a href='https://halfhelix.com'>Half Helix</a>, a full digital agency in New York City."
       }
     ]
   ]

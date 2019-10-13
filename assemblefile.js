@@ -10,7 +10,7 @@ app.data('./src/data/data.json')
 
 let sections = {}
 glob.readdirSync('./src/partials/*.hbs').map( file => {
-  const abs = path.normalize(`${__dirname}/../${file}`)
+  const abs = path.normalize(`${__dirname}/${file}`)
   sections[/.*\/(.[^.]*)\.hbs/.exec(abs)[1]] = fs.readFileSync(abs, 'utf8')
 })
 

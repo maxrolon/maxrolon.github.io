@@ -1012,15 +1012,22 @@ pre {
   transform: rotate(45deg); }
 
 .image {
-  max-height: 650px; }
+  width: 120px;
+  height: 120px;
+  margin-top: 4em; }
+  @media (min-width: 50em) {
+    .image {
+      margin-top: 1em;
+      width: 250px;
+      height: 250px; } }
 
 .image--img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center 70%;
-     object-position: center 70%; }
+  overflow: hidden;
+  border-radius: 50%; }
 
 .image__hover {
   position: absolute;
@@ -1129,7 +1136,7 @@ footer {
   @media (min-width: 50em) {
     .quote__title {
       max-width: 620px;
-      margin: 1.5em auto 1.2em; } }
+      margin: .8em auto 1.2em; } }
 
 .list {
   color: #000;
