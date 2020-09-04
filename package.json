@@ -33,7 +33,7 @@
     "glob-fs": "^0.1.6",
     "gulp-extname": "^0.2.2",
     "livereloadify": "^2.0.0",
-    "node-sass": "^3.7.0",
+    "node-sass": "^4.13.1",
     "onchange": "^3.0.2",
     "parallelshell": "3.0.1",
     "postcss-cli": "^2.6.0",
